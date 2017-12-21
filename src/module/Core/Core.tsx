@@ -192,15 +192,22 @@ export class Core {
   private configureStore(): ReduxYarlStore<any, Core> {
     const enhancers: Array<any> = [];
 
+    let serializer = (a: any) => a;
+    if (process.env.NODE_ENV !== 'production') {
+      serializer = require('lib/redux-mut/dev').actionSerializer;
+    }
+
     const devToolOptions = {
       latency: 0,
+      actionSanitizer: serializer,
     };
 
-    const devTools: any = process.env.NODE_ENV
-      ? (window as any).__REDUX_DEVTOOLS_EXTENSION__
-        ? (window as any).__REDUX_DEVTOOLS_EXTENSION__(devToolOptions)
-        : null
-      : null;
+    const devTools: any =
+      process.env.NODE_ENV !== 'production'
+        ? (window as any).__REDUX_DEVTOOLS_EXTENSION__
+          ? (window as any).__REDUX_DEVTOOLS_EXTENSION__(devToolOptions)
+          : null
+        : null;
 
     const identityGetDetectors: GetDetectors<any, Core> = () => [];
     const reduxYarlStoreEnhancer = createReduxYarlEnhancer(identityGetDetectors, this);
