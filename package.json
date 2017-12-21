@@ -1,0 +1,57 @@
+{
+  "name": "atelier-beau-voir",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/fontfaceobserver": "^0.0.6",
+    "@types/history": "^4.6.2",
+    "@types/jest": "^21.1.8",
+    "@types/lodash": "^4.14.91",
+    "@types/lodash-es": "^4.17.0",
+    "@types/mousetrap": "^1.5.34",
+    "@types/node": "^8.5.1",
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3",
+    "fontfaceobserver": "^2.0.13",
+    "history": "^4.7.2",
+    "lodash": "^4.17.4",
+    "mousetrap": "^1.6.1",
+    "mousetrap-global-bind": "^1.1.0",
+    "raf": "^3.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts-ts": "2.8.0",
+    "reselect": "^3.0.1",
+    "styled-components": "^2.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.6.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.6.2",
+    "typescript-styled-plugin": "^0.2.2"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "homepage": "http://localhost:8000/wp-content/themes/beau-voir/",
+  "dependencies": {
+    "@etienne-dldc/redux-router-location": "^1.0.0",
+    "@types/color": "^2.0.0",
+    "@types/react-redux": "^5.0.14",
+    "@types/redux": "^3.6.0",
+    "axios": "^0.17.1",
+    "color": "^2.0.1",
+    "date-fns": "^1.29.0",
+    "immutable": "^4.0.0-rc.9",
+    "path-pattern": "^1.1.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  }
+}
