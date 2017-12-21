@@ -95,6 +95,10 @@ export class Core {
     this.updateRedux();
   }
 
+  dispatch(action: any): Promise<any> {
+    return this.store.dispatch(action);
+  }
+
   whenBoot(listener: () => void): void {
     if (this.booted) {
       listener();

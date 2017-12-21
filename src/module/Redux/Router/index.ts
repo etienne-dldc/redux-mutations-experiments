@@ -1,1 +1,1 @@
-export * from './selector/RouterSelector';
+export * from './RouterSelector';
