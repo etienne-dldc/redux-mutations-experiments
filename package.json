@@ -1,5 +1,5 @@
 {
-  "name": "atelier-beau-voir",
+  "name": "redux-mutations-experiments",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -40,7 +40,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "homepage": "http://localhost:8000/wp-content/themes/beau-voir/",
   "dependencies": {
     "@etienne-dldc/redux-router-location": "^1.0.0",
     "@types/color": "^2.0.0",
